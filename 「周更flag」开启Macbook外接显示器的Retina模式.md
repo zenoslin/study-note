@@ -12,7 +12,7 @@ macOS并没有像windows放大字体大小的设置，所以只能通过修改�
 
 这个工具可以为你的显示器设置所有分辨率
 
-![RDM_1](https://www.zenoslin.top/laboratory/cdn/wechat/RDM_1.png)
+![RDM_1](./img/RDM_1.png)
 
 如果幸运的，想要的分辨率都带有⚡️标识，那么恭喜你你只需要选择这个分辨率就可以了。
 
