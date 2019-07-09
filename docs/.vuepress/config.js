@@ -2,7 +2,7 @@ module.exports = {
   title: "Zenos Note",
   description: "一些学习笔记",
   dest: "./dist", // 设置输出目录
-  base: "/note/",
+  base: "/study-note/",
   head: [
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
@@ -16,10 +16,13 @@ module.exports = {
         itemprop: "description",
         content: "一些学习笔记"
       }
-    ],
+    ]
   ],
   repo: "https://github.com/zenoslin/study-note", // 添加 github 链接
   themeConfig: {
+    themeConfig: {
+      lastUpdated: "Last Updated"
+    },
     nav: [
       {
         text: "blog",
@@ -41,9 +44,9 @@ module.exports = {
           ["/https/", "2分钟获得HTTPS证书"],
           ["/imagemin/", "压缩图片桌面应用"],
           ["/webpackCli/", "用 webpack 搭建 Ming-cli"],
-          ["/layabox/", "mac下layabox编译环境配置笔记"],
+          ["/layabox/", "mac下layabox编译环境配置笔记"]
         ]
-      },
+      }
     ]
   }
 };
