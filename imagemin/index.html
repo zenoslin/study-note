@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> 压缩图片桌面应用 imagemin-electron | Zenos Note</title>
+    <meta name="description" content="一些学习笔记">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="description" itemprop="description" content="一些学习笔记">
+    
+    <link rel="preload" href="/note/assets/css/0.styles.3e02f63c.css" as="style"><link rel="preload" href="/note/assets/js/app.636a47c6.js" as="script"><link rel="preload" href="/note/assets/js/2.36009e24.js" as="script"><link rel="preload" href="/note/assets/js/10.6549388d.js" as="script"><link rel="prefetch" href="/note/assets/js/11.db2c79ca.js"><link rel="prefetch" href="/note/assets/js/12.2725cf1e.js"><link rel="prefetch" href="/note/assets/js/13.60741dd3.js"><link rel="prefetch" href="/note/assets/js/3.8cc5e810.js"><link rel="prefetch" href="/note/assets/js/4.aac0cde1.js"><link rel="prefetch" href="/note/assets/js/5.57decd70.js"><link rel="prefetch" href="/note/assets/js/6.1576a5c9.js"><link rel="prefetch" href="/note/assets/js/7.1665c743.js"><link rel="prefetch" href="/note/assets/js/8.97b5f2b6.js"><link rel="prefetch" href="/note/assets/js/9.17d5a17d.js">
+    <link rel="stylesheet" href="/note/assets/css/0.styles.3e02f63c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/note/" class="home-link router-link-active"><!----> <span class="site-name">Zenos Note</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://zenoslin.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/zenoslin/study-note" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://zenoslin.top" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/zenoslin/study-note" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>杂谈</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/note/neteaseMusic/" class="sidebar-link">我在网易云听周杰伦</a></li><li><a href="/note/emoji/" class="sidebar-link">有趣！把 Emoji 动画加到你的地址栏和标题里</a></li><li><a href="/note/retina/" class="sidebar-link">开启 Macbook 外接显示器的 Retina 模式</a></li><li><a href="/note/https/" class="sidebar-link">2分钟获得HTTPS证书</a></li><li><a href="/note/imagemin/" class="active sidebar-link">压缩图片桌面应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/note/imagemin/#准备工作" class="sidebar-link">准备工作</a></li><li class="sidebar-sub-header"><a href="/note/imagemin/#压缩图片" class="sidebar-link">压缩图片</a></li><li class="sidebar-sub-header"><a href="/note/imagemin/#获取文件路径" class="sidebar-link"> 获取文件路径</a></li><li class="sidebar-sub-header"><a href="/note/imagemin/#桌面应用生成" class="sidebar-link">桌面应用生成</a></li></ul></li><li><a href="/note/webpackCli/" class="sidebar-link">用 webpack 搭建 Ming-cli</a></li><li><a href="/note/layabox/" class="sidebar-link">mac下layabox编译环境配置笔记</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="压缩图片桌面应用-imagemin-electron"><a href="#压缩图片桌面应用-imagemin-electron" aria-hidden="true" class="header-anchor">#</a>  压缩图片桌面应用 imagemin-electron</h1> <p>基于<code>electron</code>制作一个<code>node</code>压缩图片的桌面应用</p> <p>下载地址：<a href="https://github.com/zenoslin/imagemin-electron/releases" target="_blank" rel="noopener noreferrer">https://github.com/zenoslin/imagemin-electron/releases<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>项目源码 Github：<a href="https://github.com/zenoslin/imagemin-electron" target="_blank" rel="noopener noreferrer">https://github.com/zenoslin/imagemin-electron<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="准备工作"><a href="#准备工作" aria-hidden="true" class="header-anchor">#</a> 准备工作</h2> <p>我们来整理一下我们需要做什么：</p> <ul><li> 压缩图片模块</li> <li>获取文件路径</li> <li>桌面应用生成</li></ul> <h2 id="压缩图片"><a href="#压缩图片" aria-hidden="true" class="header-anchor">#</a> 压缩图片</h2> <p>我们需要  使用<code>imagemin</code>这个库来压缩图片，这里我们把这个库封装成压缩模块。</p> <div class="language-- js extra-class"><pre class="language-text"><code>const imagemin = require('imagemin')
+const imageminMozjpeg = require('imagemin-mozjpeg')
+const imageminPngquant = require('imagemin-pngquant')
+const imageminGifsicle = require('imagemin-gifsicle')
+
+async function compass(input, output, opts, callback) {
+    let log = await imageminCompass(input, output, opts)
+    callback(log)
+}
+
+async function imageminCompass(input, output = 'temp', opts = {}) {
+    input = (typeof input == 'string') ? [input] : input;
+    return await imagemin(input, output, {
+            use: [
+                imageminMozjpeg(opts),
+                imageminPngquant(opts),
+                imageminGifsicle({
+                    optimizationLevel:3
+                })
+            ]
+        })
+        .then(file =&gt; {
+            return {
+                status: true,
+                data: file
+            };
+        })
+        .catch(e =&gt; {
+            console.log(e);
+            return {
+                status: false,
+                error: e.toString()
+            }
+        });
+}
+
+module.exports = {
+    compass: compass
+};
+</code></pre></div><h2 id="获取文件路径"><a href="#获取文件路径" aria-hidden="true" class="header-anchor">#</a>  获取文件路径</h2> <p>在我的理解中，electron 用的是一个 mini 版的 chrome 浏览器，然后帮我们实现了浏览器跟系统(win &amp; mac)交互的的许多 api 接口。</p> <p>我们可以通过正常写网页的方式进行开发，当需要进行与系统交互的操作时，我们只需要在我们网页中的 js 进程（这里应该叫做这个桌面应用的渲染进程）抛出一个事件，然后在 electron 的主进程进行监听，收到事件后调用相应的 api 接口，结果再反过来用事件的方式抛给渲染进程。</p> <p>electron 的安装和学习可以上官网<a href="https://electronjs.org/" target="_blank" rel="noopener noreferrer">https://electronjs.org/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>进行学习。</p> <p>ps：这里有一个 electron 的坑说一下，electron 和 jquery 存在冲突，所以直接用<code>script</code>标签引入会失败，在 <code>windows</code>对象中找不到<code>jQuery</code>对象。这里我们可以加这么一句解决。</p> <div class="language--html extra-class"><pre class="language-text"><code>&lt;script src=&quot;./src/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;if (typeof module === 'object') {window.jQuery = window.$ = module.exports;};&lt;/script&gt;
+</code></pre></div><p>回到正题，首先我们在<code>index.html</code>中增加一个按钮来打开系统的路径选择器。</p> <div class="language--html extra-class"><pre class="language-text"><code>&lt;button id=&quot;input-btn&quot;&gt;选择路径&lt;/button&gt;
+</code></pre></div><p>在  渲染进程<code>renderer.js</code> 中，监听按钮的点击，以及监听主线程返回的事件。</p> <div class="language--js extra-class"><pre class="language-text"><code>const {ipcRenderer} = require('electron')
+const inputBtn = document.getElementById('input-btn')
+
+inputBtn.addEventListener('click', (event) =&gt; {
+    console.log('点击输入按钮')
+    ipcRenderer.send('open-file-dialog-input')
+})
+
+ipcRenderer.on('input-path', (event, path) =&gt; {
+    console.log(`收到完成信息 ${path}`)
+    _inputPath = path
+    inputPath.value = `${path}`
+})
+</code></pre></div><p>在主进程<code>main.js</code>中，监听渲染进程抛出的事件，并调用 api 接口后放回结果。</p> <div class="language--js extra-class"><pre class="language-text"><code>ipcMain.on('open-file-dialog-input', (event) =&gt; {
+    dialog.showOpenDialog({
+        properties: ['openFile', 'openDirectory']
+    }, (files) =&gt; {
+        if (files) {
+            console.log('发出完成信息')
+            event.sender.send('input-path', files)
+        }
+    })
+})
+</code></pre></div><p>这样我们完成了使用系统 api 接口选择路径的功能。但其实我们实际的使用场景中路径选择器的方式并不是特别的方便，所以我们实现另一个功能 。</p> <p>拖动将文件或者文件夹拖入网页中，获取到对应的路径。这里使用了<code>js</code>+<code>div</code>实现了这个功能。</p> <p>index.html</p> <div class="language-- html extra-class"><pre class="language-text"><code>&lt;!--可拖入区域--&gt;
+&lt;div id=&quot;holder&quot; class=&quot;jumbotron holder&quot;&gt;
+&lt;/div&gt;
+&lt;style&gt;
+        /* 拖拽的区域样式 */
+        .holder {
+            min-height: 200px;
+            background: #eee;
+            margin: 2em;
+            padding: 1em;
+            border: 0px dotted #eee;
+            border-radius: 10px;
+            transition: .3s all ease-in-out;
+        }
+
+        /* 拖拽时用jQuery为其添加边框样式的class */
+        .holder-ondrag {
+            border: 20px dotted #d45700;
+        }
+&lt;/style&gt;
+</code></pre></div><p>renderer.js</p> <div class="language--js extra-class"><pre class="language-text"><code>const holder = document.getElementById(&quot;holder&quot;)
+
+holder.ondragenter = holder.ondragover = (event) =&gt; {
+    event.preventDefault()
+    holder.className = &quot;jumbotron holder-ondrag&quot;
+}
+
+holder.ondragleave = (event) =&gt; {
+    event.preventDefault()
+    holder.className = &quot;jumbotron holder&quot;
+}
+
+holder.ondrop = (event) =&gt; {
+    // 调用 preventDefault() 来避免浏览器对数据的默认处理
+    //（drop 事件的默认行为是以链接形式打开
+    event.preventDefault()
+    holder.className = &quot;jumbotron holder&quot;
+    var file = event.dataTransfer.files[0]
+    _inputPath = inputPath.value = file.path
+}
+</code></pre></div><p>将我们  获取到的文件路径传入  前面编写的压缩文件模块，这样我们就可以完成了图片的压缩。</p> <h2 id="桌面应用生成"><a href="#桌面应用生成" aria-hidden="true" class="header-anchor">#</a> 桌面应用生成</h2> <p>最后，我们利用<a href="https://github.com/electron-userland/electron-packager" target="_blank" rel="noopener noreferrer">electron-packager<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>完成对<code>electron</code>桌面应用的打包。</p> <div class="language--sh extra-class"><pre class="language-text"><code>//mac
+electron-packager . --out=out --platform=mas --arch=x64
+//win
+electron-packager . --platform=win32 --arch=x64
+</code></pre></div><p>ps：在非 Windows 主机平台上进行打包，需要安装 Wine 1.6 或更高版本</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/note/https/" class="prev">
+          2分钟获得HTTPS证书
+        </a></span> <span class="next"><a href="/note/webpackCli/">
+          用 webpack 搭建 Ming-cli
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/note/assets/js/app.636a47c6.js" defer></script><script src="/note/assets/js/2.36009e24.js" defer></script><script src="/note/assets/js/10.6549388d.js" defer></script>
+  </body>
+</html>
