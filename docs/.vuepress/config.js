@@ -20,9 +20,6 @@ module.exports = {
   ],
   repo: "https://github.com/zenoslin/study-note", // 添加 github 链接
   themeConfig: {
-    themeConfig: {
-      lastUpdated: "Last Updated"
-    },
     nav: [
       {
         text: "blog",
@@ -48,5 +45,8 @@ module.exports = {
         ]
       }
     ]
+  },
+  markdown: {
+    lineNumbers: true
   }
 };

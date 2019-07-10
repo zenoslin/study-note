@@ -18,7 +18,7 @@
 
 我们需要  使用`imagemin`这个库来压缩图片，这里我们把这个库封装成压缩模块。
 
-```- js
+```js
 const imagemin = require('imagemin')
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const imageminPngquant = require('imagemin-pngquant')
@@ -70,20 +70,20 @@ electron 的安装和学习可以上官网[https://electronjs.org/](https://elec
 
 ps：这里有一个 electron 的坑说一下，electron 和 jquery 存在冲突，所以直接用`script`标签引入会失败，在 `windows`对象中找不到`jQuery`对象。这里我们可以加这么一句解决。
 
-```-html
+```html
 <script src="./src/jquery.min.js"></script>
 <script>if (typeof module === 'object') {window.jQuery = window.$ = module.exports;};</script>
 ```
 
 回到正题，首先我们在`index.html`中增加一个按钮来打开系统的路径选择器。
 
-```-html
+```html
 <button id="input-btn">选择路径</button>
 ```
 
 在  渲染进程`renderer.js` 中，监听按钮的点击，以及监听主线程返回的事件。
 
-```-js
+```js
 const {ipcRenderer} = require('electron')
 const inputBtn = document.getElementById('input-btn')
 
@@ -101,7 +101,7 @@ ipcRenderer.on('input-path', (event, path) => {
 
 在主进程`main.js`中，监听渲染进程抛出的事件，并调用 api 接口后放回结果。
 
-```-js
+```js
 ipcMain.on('open-file-dialog-input', (event) => {
     dialog.showOpenDialog({
         properties: ['openFile', 'openDirectory']
@@ -120,7 +120,7 @@ ipcMain.on('open-file-dialog-input', (event) => {
 
 index.html
 
-```- html
+```html
 <!--可拖入区域-->
 <div id="holder" class="jumbotron holder">
 </div>
@@ -145,7 +145,7 @@ index.html
 
 renderer.js
 
-```-js
+```js
 const holder = document.getElementById("holder")
 
 holder.ondragenter = holder.ondragover = (event) => {
@@ -174,7 +174,7 @@ holder.ondrop = (event) => {
 
 最后，我们利用[electron-packager](https://github.com/electron-userland/electron-packager)完成对`electron`桌面应用的打包。
 
-```-sh
+```shell
 //mac
 electron-packager . --out=out --platform=mas --arch=x64
 //win

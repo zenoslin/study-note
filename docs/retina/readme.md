@@ -8,7 +8,7 @@ macOS 并没有像 windows 放大字体大小的设置，所以只能通过修�
 
 经过寻找，终于找到了一个分辨率调节的神器 RDM！
 
-先附上下载链接http://avi.alkalay.net/software/RDM/
+先附上下载链接[http://avi.alkalay.net/software/RDM/](http://avi.alkalay.net/software/RDM/)
 
 这个工具可以为你的显示器设置所有分辨率
 
@@ -24,7 +24,7 @@ macOS 并没有像 windows 放大字体大小的设置，所以只能通过修�
 
 尝试过几种不同开启 HiDPI 的方法之后，强烈推荐一下方法。
 
-一键开启脚本https://github.com/xzhih/one-key-hidpi
+一键开启脚本[https://github.com/xzhih/one-key-hidpi](https://github.com/xzhih/one-key-hidpi)
 
 这个东西的具体用法就不需要我说了，这个 repo 里有中文版的 readme.md 文件。
 
