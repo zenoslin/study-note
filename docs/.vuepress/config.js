@@ -43,6 +43,13 @@ module.exports = {
           ["/webpackCli/", "用 webpack 搭建 Ming-cli"],
           ["/layabox/", "mac下layabox编译环境配置笔记"]
         ]
+      },
+      {
+        title: "工具",
+        collapsable: false,
+        children: [
+          ["/atlas/", "图集打包工具"]
+        ]
       }
     ]
   },
