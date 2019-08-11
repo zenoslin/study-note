@@ -3,6 +3,7 @@
 记录一些有趣的分享以及学习的笔记
 [https://zenoslin.github.io/study-note/](/study-note/)
 
+- [浅谈小程序开发](/study-note/miniApp)
 - [我在网易云听周杰伦](/study-note/neteaseMusic)
 - [有趣！把 Emoji 动画加到你的地址栏和标题里](/study-note/emoji)
 - [开启 Macbook 外接显示器的 Retina 模式](/study-note/retina)
