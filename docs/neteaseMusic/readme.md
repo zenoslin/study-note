@@ -47,8 +47,8 @@ PS：如果端口被占用需修改指定端口，格式：http:https
 ### 方法二：获取桌面应用程序
 
 [[Github 地址](https://github.com/zenoslin/unblock-music/)]
-[[Mac 下载地址](https://github.com/zenoslin/unblock-music/releases/download/beta0.1.0/unblock-music-mas-x64.zip)]
-[[Win 下载地址](https://github.com/zenoslin/unblock-music/releases/download/beta0.1.0/unblock-music-win32-x64.zip)]
+[[Mac 下载地址](https://www.zenoslin.top/tools/unblock-music-macOS.zip)]
+[[Win 下载地址](https://www.zenoslin.top/tools/unblock-music-window.zip)]
 
 下载之后，点击开启就能开启本地代理
 
