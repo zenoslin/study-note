@@ -35,6 +35,7 @@ module.exports = {
         title: "杂谈",
         collapsable: false,
         children: [
+          ["/rollup/", "携手Rollup与TS造轮子"],
           ["/miniApp/", "浅谈小程序开发"],
           ["/neteaseMusic/", "我在网易云听周杰伦"],
           ["/emoji/", "有趣！把 Emoji 动画加到你的地址栏和标题里"],
