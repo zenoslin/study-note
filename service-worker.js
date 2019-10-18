@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "581410a7f239e469063845cbcb5b7113"
+    "revision": "0395b200eeacf9f4f2271793bf93f38f"
   },
   {
     "url": "assets/css/0.styles.7a5cb970.css",
@@ -60,16 +60,16 @@ self.__precacheManifest = [
     "revision": "13cd1a2d0a2c582884fc27fbbf15c383"
   },
   {
-    "url": "assets/js/10.89949eb9.js",
-    "revision": "5b4d1329e275569fa7ee4ae5b90c4105"
+    "url": "assets/js/10.d7510b63.js",
+    "revision": "4ab9ee90f8fc01d63a0af72720e2144e"
   },
   {
     "url": "assets/js/11.222213e7.js",
     "revision": "21da8403a1ccf5d6b6843247386a1e46"
   },
   {
-    "url": "assets/js/12.9fead229.js",
-    "revision": "15d927987d9af305fe2a11d9487f2e1a"
+    "url": "assets/js/12.124032af.js",
+    "revision": "582aadb41ab072d0cb025119303edd02"
   },
   {
     "url": "assets/js/13.efb034fe.js",
@@ -124,60 +124,56 @@ self.__precacheManifest = [
     "revision": "c67b239622713a623168ac27ef8572ea"
   },
   {
-    "url": "assets/js/app.fb1192e2.js",
-    "revision": "24abd3f8c02ade79fdb8d32677291d57"
+    "url": "assets/js/app.2f18455f.js",
+    "revision": "2ccc57c8cb55aea90ff50c85d30a5ebf"
   },
   {
     "url": "atlas/index.html",
-    "revision": "5bebaa14c90ab0db78ebdc2f7a50ba3e"
-  },
-  {
-    "url": "book.png",
-    "revision": "5dec9b5766bdfab500964b7e20dc7092"
+    "revision": "135c443b2cf8a18ef2ae3ee7eabbe8df"
   },
   {
     "url": "emoji/index.html",
-    "revision": "040885206bdd1513f6dbd8924f3953bf"
+    "revision": "ae5461f5624a1d10188b6dbcbe9917a0"
   },
   {
     "url": "emojiLocation/index.html",
-    "revision": "02c008bfa5b930de5053686eb9dff210"
+    "revision": "0c300c53bafff29bed2918e590330e6f"
   },
   {
     "url": "https/index.html",
-    "revision": "e98e19e75cb2cf90bbd12616e6364547"
+    "revision": "ab2fd115ad75642b2904e39a0e5ccac1"
   },
   {
     "url": "imagemin/index.html",
-    "revision": "54452b2a7e7e08a68d87f7cea9820f9a"
+    "revision": "2d2fb30f9700aeac3d6a6bce165135dc"
   },
   {
     "url": "index.html",
-    "revision": "6f8ad61afd68268e948325465f99581b"
+    "revision": "3efc1c1379190ede13b2aa5f788e1638"
   },
   {
     "url": "layabox/index.html",
-    "revision": "415eb4b536bc57d60fc81e7bb67414d4"
+    "revision": "fffcc79980a3336b850648a4bd7eb570"
   },
   {
     "url": "miniApp/index.html",
-    "revision": "2c69e3ebc8df42b6d05f86317cc3c669"
+    "revision": "b67782e4c1beda7040b778d08723fac4"
   },
   {
     "url": "neteaseMusic/index.html",
-    "revision": "5e980d1121394f58242c575605d32f21"
+    "revision": "ecdffac7b0cd6ebfc2049f6dc0bd2961"
   },
   {
     "url": "retina/index.html",
-    "revision": "84052d4002681021badda368f016736d"
+    "revision": "9440d3f258d3bcaaf710ffbc9c0586fe"
   },
   {
     "url": "rollup/index.html",
-    "revision": "a20c332da41bef08782630c81b014895"
+    "revision": "31ca774c481b4d0b0cf8b313e8716291"
   },
   {
     "url": "webpackCli/index.html",
-    "revision": "3d6b2eabafe1605b2420c3b047e1ecd9"
+    "revision": "5507c7e707e8c3dc2f0977f63d275576"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
