@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "0395b200eeacf9f4f2271793bf93f38f"
+    "revision": "64ab740a6294015759348fb10334c231"
   },
   {
     "url": "assets/css/0.styles.7a5cb970.css",
@@ -124,56 +124,96 @@ self.__precacheManifest = [
     "revision": "c67b239622713a623168ac27ef8572ea"
   },
   {
-    "url": "assets/js/app.2f18455f.js",
-    "revision": "2ccc57c8cb55aea90ff50c85d30a5ebf"
+    "url": "assets/js/app.4a96da1f.js",
+    "revision": "fc2b96b398eadc059f0afc147f767583"
   },
   {
     "url": "atlas/index.html",
-    "revision": "135c443b2cf8a18ef2ae3ee7eabbe8df"
+    "revision": "c80b6d4b211ba26157573be5d21ab5f5"
   },
   {
     "url": "emoji/index.html",
-    "revision": "ae5461f5624a1d10188b6dbcbe9917a0"
+    "revision": "91ba3878ec1962c0897df2be01d4d86f"
   },
   {
     "url": "emojiLocation/index.html",
-    "revision": "0c300c53bafff29bed2918e590330e6f"
+    "revision": "b82d1f56dc6627a65bea82690effeca8"
   },
   {
     "url": "https/index.html",
-    "revision": "ab2fd115ad75642b2904e39a0e5ccac1"
+    "revision": "0a682ed3183961bf0b17a550728593fa"
+  },
+  {
+    "url": "icons/apple-touch-icon-152x152.png",
+    "revision": "fa90590cfc1286862fd2657ed2962d97"
+  },
+  {
+    "url": "icons/book-128x128.png",
+    "revision": "7b3ff88236ec7adf3958ccc6e84ab0cc"
+  },
+  {
+    "url": "icons/book-256x256.png",
+    "revision": "f0f73c137d251f4982252d8485cecff2"
+  },
+  {
+    "url": "icons/book-32x32.png",
+    "revision": "504b211d56e4a841c326bdffa836f24c"
+  },
+  {
+    "url": "icons/book-512x512.png",
+    "revision": "d35cd8dbb7fd5c63790a915dd8af6da3"
+  },
+  {
+    "url": "icons/book-64x64.png",
+    "revision": "d85156db9fb54c1f435b432cac9e8c10"
+  },
+  {
+    "url": "icons/book.png",
+    "revision": "5dec9b5766bdfab500964b7e20dc7092"
+  },
+  {
+    "url": "icons/book.svg",
+    "revision": "cb08c94df14ce8a3939806abe4a80b83"
+  },
+  {
+    "url": "icons/msapplication-icon-144x144.png",
+    "revision": "f3c6d350b38bce60d71120a267d39dc7"
+  },
+  {
+    "url": "icons/safari-pinned-tab.svg",
+    "revision": "cb08c94df14ce8a3939806abe4a80b83"
   },
   {
     "url": "imagemin/index.html",
-    "revision": "2d2fb30f9700aeac3d6a6bce165135dc"
+    "revision": "ff7b5791e7c6059154bf13ddad43f981"
   },
   {
     "url": "index.html",
-    "revision": "3efc1c1379190ede13b2aa5f788e1638"
+    "revision": "c3a26711aa14dd7c9cbcd689a24f79e5"
   },
   {
     "url": "layabox/index.html",
-    "revision": "fffcc79980a3336b850648a4bd7eb570"
+    "revision": "6e7a8557e740c26956f740da7bede351"
   },
   {
     "url": "miniApp/index.html",
-    "revision": "b67782e4c1beda7040b778d08723fac4"
+    "revision": "1de729f2dc209c4171a326f648fa7363"
   },
   {
     "url": "neteaseMusic/index.html",
-    "revision": "ecdffac7b0cd6ebfc2049f6dc0bd2961"
+    "revision": "7ec5b5b87f518a3c4263d71f00a79a8c"
   },
   {
     "url": "retina/index.html",
-    "revision": "9440d3f258d3bcaaf710ffbc9c0586fe"
+    "revision": "f3e3810c57d3311363f8caf086e3a5e8"
   },
   {
     "url": "rollup/index.html",
-    "revision": "31ca774c481b4d0b0cf8b313e8716291"
+    "revision": "07b420d963d73efaf9a2b0b81b76c4bc"
   },
   {
     "url": "webpackCli/index.html",
-    "revision": "5507c7e707e8c3dc2f0977f63d275576"
+    "revision": "09cc65135684a81fc7812a98b2123427"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
