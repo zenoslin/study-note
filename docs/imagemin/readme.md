@@ -1,4 +1,4 @@
-#  压缩图片桌面应用 imagemin-electron
+# 压缩图片桌面应用 imagemin-electron
 
 基于`electron`制作一个`node`压缩图片的桌面应用
 
@@ -10,7 +10,7 @@
 
 我们来整理一下我们需要做什么：
 
--  压缩图片模块
+- 压缩图片模块
 - 获取文件路径
 - 桌面应用生成
 
@@ -60,7 +60,7 @@ module.exports = {
 };
 ```
 
-##  获取文件路径
+## 获取文件路径
 
 在我的理解中，electron 用的是一个 mini 版的 chrome 浏览器，然后帮我们实现了浏览器跟系统(win & mac)交互的的许多 api 接口。
 
@@ -168,15 +168,15 @@ holder.ondrop = (event) => {
 }
 ```
 
-将我们  获取到的文件路径传入  前面编写的压缩文件模块，这样我们就可以完成了图片的压缩。
+将我们获取到的文件路径传入  前面编写的压缩文件模块，这样我们就可以完成了图片的压缩。
 
 ## 桌面应用生成
 
 最后，我们利用[electron-packager](https://github.com/electron-userland/electron-packager)完成对`electron`桌面应用的打包。
 
 ```shell
-//mac
-electron-packager . --out=out --platform=mas --arch=x64
+//mac
+electron-packager . --out=out --platform=mas --arch=x64
 //win
 electron-packager . --platform=win32 --arch=x64
 ```
