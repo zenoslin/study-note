@@ -38,7 +38,7 @@ module.exports = {
           ["/rollup/", "携手Rollup与TS造轮子"],
           ["/miniApp/", "浅谈小程序开发"],
           ["/neteaseMusic/", "我在网易云听周杰伦"],
-          ["/emoji/", "有趣！把 Emoji 动画加到你的地址栏和标题里"],
+          ["/emojiLocation/", "有趣！把 Emoji 动画加到你的地址栏和标题里"],
           ["/retina/", "开启 Macbook 外接显示器的 Retina 模式"],
           ["/https/", "2分钟获得HTTPS证书"],
           ["/imagemin/", "压缩图片桌面应用"],
@@ -50,6 +50,7 @@ module.exports = {
         title: "工具",
         collapsable: false,
         children: [
+          ["/emoji/", "emoji list"],
           ["/atlas/", "图集打包工具"]
         ]
       }
