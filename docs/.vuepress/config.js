@@ -40,7 +40,7 @@ module.exports = {
   themeConfig: {
     nav: [
       {
-        text: "blog",
+        text: "Blog",
         link: "https://zenoslin.top"
       },
       {
@@ -53,6 +53,7 @@ module.exports = {
         title: "杂谈",
         collapsable: false,
         children: [
+          ["/proxy/", "代理命令行网络"],
           ["/rollup/", "携手Rollup与TS造轮子"],
           ["/miniApp/", "浅谈小程序开发"],
           ["/neteaseMusic/", "我在网易云听周杰伦"],
